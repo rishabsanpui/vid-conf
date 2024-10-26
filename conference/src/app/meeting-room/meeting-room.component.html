@@ -1,0 +1,13 @@
+<div class="meeting-room">
+    <h1>Meeting Room: {{ meetingId }}</h1>
+    <div class="videos">
+      <video #localVideo autoplay muted></video>
+      <video #remoteVideo autoplay></video>
+    </div>
+    <div class="controls">
+      <button (click)="toggleVideo()">{{ isVideoOn ? 'Turn Off Video' : 'Turn On Video' }}</button>
+      <button (click)="toggleMute()">Mute/Unmute</button>
+      <button (click)="leaveMeeting()">Leave Meeting</button>
+    </div>
+  </div>
+  
